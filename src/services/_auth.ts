@@ -37,7 +37,9 @@ export const getProviderAuthPayload = (provider: string) => {
     default: {
       const config = settingsSelectors.providerConfig(provider)(useGlobalStore.getState());
 
-      return { apiKey: config?.apiKey, endpoint: config?.endpoint };
+      console.log('config----', config);
+      // return { apiKey: config?.apiKey, endpoint: config?.endpoint };
+      return { apiKey: 'app-eUtC1tCiu7wTP50Emv3kiKI1', endpoint: `http://localhost:3010/api` };
     }
   }
 };

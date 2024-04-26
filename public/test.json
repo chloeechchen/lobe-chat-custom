@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "tags": [
+    "设计"
+  ],
+  "agents": [
+    {
+      "author": "y22emc2",
+      "createAt": "2024-04-15",
+      "homepage": "https://github.com/y22emc2",
+      "identifier": "design-test",
+      "meta": {
+        "avatar": "🦐",
+        "description": "从设计美感去描述",
+        "tags": [
+          "高级",
+          "美观",
+          "设计"
+        ],
+        "title": "设计测试"
+      },
+      "schemaVersion": 1
+    }
+  ]
+}

@@ -49,7 +49,7 @@ export interface FetchSSEOptions {
  */
 export const fetchSSE = async (fetchFn: () => Promise<Response>, options: FetchSSEOptions = {}) => {
   const response = await fetchFn();
-
+  console.log(111111, response);
   // 如果不 ok 说明有请求错误
   if (!response.ok) {
     const chatMessageError = await getMessageError(response);
@@ -65,7 +65,7 @@ export const fetchSSE = async (fetchFn: () => Promise<Response>, options: FetchS
   if (!data) return;
   let output = '';
   const reader = data.getReader();
-  const decoder = new TextDecoder();
+  const decoder = new TextDecoder("utf-8");
 
   let done = false;
   let finishedType: SSEFinishType = 'done';
@@ -73,6 +73,7 @@ export const fetchSSE = async (fetchFn: () => Promise<Response>, options: FetchS
   while (!done) {
     try {
       const { value, done: doneReading } = await reader.read();
+      console.log('valuevalue', value);
       done = doneReading;
       const chunkValue = decoder.decode(value, { stream: true });
 

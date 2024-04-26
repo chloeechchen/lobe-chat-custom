@@ -173,6 +173,7 @@ export const chatMessage: StateCreator<
     await messageService.removeAllMessages();
     await refreshMessages();
   },
+  // 发送消息
   sendMessage: async ({ message, files, onlyAddUserMessage }) => {
     const { coreProcessMessage, activeTopicId, activeId } = get();
     if (!activeId) return;

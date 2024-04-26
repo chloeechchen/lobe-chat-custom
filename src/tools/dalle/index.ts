@@ -1,7 +1,7 @@
 import { BuiltinToolManifest } from '@/types/tool';
 
 // import {SiOpenai} from "@icons-pack/react-simple-icons";
-
+// 默认的plugin
 export const DalleManifest: BuiltinToolManifest = {
   api: [
     {

@@ -12,12 +12,14 @@ export class AgentMarket {
   }
 
   getAgentIndexUrl = (lang: Locales = DEFAULT_LANG) => {
+    return 'http://localhost:3010/test.json'
     if (isLocaleNotSupport(lang)) return this.baseUrl;
 
     return urlJoin(this.baseUrl, `index.${normalizeLocale(lang)}.json`);
   };
 
   getAgentUrl = (identifier: string, lang: Locales = DEFAULT_LANG) => {
+    return 'http://localhost:3010/design-test.json'
     if (isLocaleNotSupport(lang)) return urlJoin(this.baseUrl, `${identifier}.json`);
 
     return urlJoin(this.baseUrl, `${identifier}.${normalizeLocale(lang)}.json`);

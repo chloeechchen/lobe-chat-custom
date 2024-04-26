@@ -32,7 +32,9 @@ const nextConfig = {
   rewrites: async () => [
     // due to google api not work correct in some countries
     // we need a proxy to bypass the restriction
-    { source: '/api/chat/google', destination: `${API_PROXY_ENDPOINT}/api/chat/google` },
+    { source: '/api/chat/google', destination: `${API_PROXY_ENDPOINT}/api/chat/google`,
+    source: '/api/chat/completions', destination: `https://api.dify.ai/v1/chat-messages`,
+   },
   ],
   reactStrictMode: true,
 

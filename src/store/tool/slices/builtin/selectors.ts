@@ -2,7 +2,7 @@ import { LobeToolMeta } from '@/types/tool/tool';
 
 import { pluginHelpers } from '../../helpers';
 import type { ToolStoreState } from '../../initialState';
-
+// 默认的plugin
 const isBuiltinTool = (id: string) => (s: ToolStoreState) =>
   pluginHelpers.isCustomPlugin(id, s.installedPlugins);
 

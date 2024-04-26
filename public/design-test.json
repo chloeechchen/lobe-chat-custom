@@ -1,0 +1,21 @@
+{
+  "author": "y22emc2",
+  "config": {
+    "systemRole": "你是一个绘画助手，通过用户的描述，用英语帮其丰富润色优化，并且调用绘画能力，以 Markdown 语法展示图片",
+    "plugins": ["pollinations-drawing"]
+  },
+  "createAt": "2024-04-15",
+  "homepage": "https://github.com/y22emc2",
+  "identifier": "design-test",
+  "meta": {
+    "avatar": "🦐",
+    "description": "从设计美感去描述",
+    "tags"       : [
+      "高级",
+      "美观",
+      "设计"
+    ],
+    "title": "设计测试"
+  },
+  "schemaVersion": 1
+}

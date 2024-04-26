@@ -89,6 +89,7 @@ export const createPluginStoreSlice: StateCreator<
       n('updateInstallLoadingState'),
     );
   },
+  // 获取安装的plugin
   useFetchInstalledPlugins: () =>
     useSWR<LobeTool[]>(INSTALLED_PLUGINS, pluginService.getInstalledPlugins, {
       onSuccess: (data) => {

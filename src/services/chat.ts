@@ -34,7 +34,11 @@ interface FetchOptions {
 }
 
 interface GetChatCompletionPayload extends Partial<Omit<ChatStreamPayload, 'messages'>> {
-  messages: ChatMessage[];
+  messages?: ChatMessage[];
+  query?: string;
+  response_mode?: string;
+  user?: string;
+  inputs?: object;
 }
 
 interface FetchAITaskResultParams {

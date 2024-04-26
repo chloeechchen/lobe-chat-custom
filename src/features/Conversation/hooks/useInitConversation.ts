@@ -5,7 +5,7 @@ import { agentSelectors } from '@/store/agent/selectors';
 import { useChatStore } from '@/store/chat';
 import { useSessionStore } from '@/store/session';
 import { useToolStore } from '@/store/tool';
-
+// 初始化对话的时候
 export const useInitConversation = () => {
   const [sessionId] = useSessionStore((s) => [s.activeId]);
   const [useFetchAgentConfig] = useAgentStore((s) => [s.useFetchAgentConfig]);
